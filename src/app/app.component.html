@@ -1,1 +1,47 @@
-<h1>hej</h1>
+
+  <nav>
+    <div id="nav-box">
+      <div class="nav-comp"><p>Home</p></div>
+      <div class="nav-comp"><p>Experience</p></div>
+      <div class="nav-comp"><p>Projects</p></div>
+      <div class="nav-comp"><p>Contact</p></div>
+    </div>
+  </nav>
+
+  <div id="space"></div>
+
+
+<div id="start-box">
+  <div>
+    <h1 id="name-header">Annie<br>Bjurman is</h1>
+    <p>a Frontend developer, Programmer, UX Designer, Code Writer m.m.</p>
+  </div>
+  <img id="image" src = "../assets/img/image.svg" alt="siluet of Annie Bjurman"/>
+</div>
+
+<div id="gap-box">
+  <p>Scroll down</p>
+  <img id="arrow" src="../assets/img/down-arrow.png">
+</div>
+
+<body id="body-box">
+  <div id="experience-box">
+    <h1 id="experience-title">My<br>experience<br>consists of</h1>
+    <div class="separator" id="separator-2020"><p>2020</p></div>
+    <div *ngFor="let e of this.experiences">
+      <app-experience *ngIf="e.year == 2020" [exp]="e"></app-experience>
+    </div>
+    <div class="separator" id="separator-2019"><p>2019</p></div>
+    <div *ngFor="let e of this.experiences">
+      <app-experience *ngIf="e.year == 2019" [exp]="e"></app-experience>
+    </div>
+    <div class="separator" id="separator-2016"><p>2016</p></div>
+    <div *ngFor="let e of this.experiences">
+      <app-experience *ngIf="e.year == 2016" [exp]="e"></app-experience>
+    </div>
+  </div>
+
+  <div id="developed-box">
+    <h1>I<br>have<br>developed</h1>
+  </div>
+</body>
