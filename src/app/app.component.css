@@ -63,11 +63,13 @@ nav {
     align-items: center;
     gap: 0em 10em;
 
-    background-size: 2em 2em;
-    /* background-image:
-    linear-gradient(to right, rgb(173, 173, 173) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(173, 173, 173) 1px, transparent 1px); */
-    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 4em 4em;
+    background-image:
+    linear-gradient(to right, #E0E0E0 1px, transparent 1px),
+    linear-gradient(to bottom, #E0E0E0 1px, transparent 1px);
+    background-color: white;
+    
+    /* background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
 
     /* background: -webkit-linear-gradient(white, white, #F7F7F7); */
 }
@@ -80,13 +82,15 @@ nav {
 
 #name-header {
     font-size: 5.5em;
+    letter-spacing: 0.13em;
     background: -webkit-linear-gradient(left,#2E6400, #9FC480, #F5DF37);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: .007em rgb(105, 105, 105);
+    -webkit-text-stroke: .006em rgb(0, 0, 0);
 
     -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.3));
     filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.3));
+    margin-bottom: 0.1em;
 }
 
 /* GAP */
