@@ -4,4 +4,5 @@ div {
     padding: 0.5em 1.5em;
     box-shadow: .5em .5em .5em #00000016;
     margin-bottom: 2em;
+    background-color: white;
 }

@@ -1,14 +1,14 @@
 <div id="project-box">
     <div id="img-box">
-        <img src="../../assets/img/project/VB1.png">
+        <img src="../../assets/img/project/{{this.proj.images[0]}}">
     </div>
     <div id="content-box">
         <div id="text-box">
-            <h2>title</h2>
-            <p>content</p>
+            <h2>{{this.proj.title}}</h2>
+            <p>{{this.proj.content}}</p>
         </div>
         <div id="bottom-box">
-            <p>Build with: ....</p>
+            <p>Build with: {{this.proj.builtWith}}</p>
             <div id="github-box">
                 <img id="github-img" src="../../assets/img/github-logo.png">
                 <p>Check it out on GitHub!</p>

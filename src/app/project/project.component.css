@@ -4,8 +4,9 @@
     /* padding: 0.5em 1.5em; */
     box-shadow: .5em .5em .5em #00000016;
     margin-bottom: 2em;
-    height: 20em;
+    height: 15em;
     display: flex;
+    background-color: white;
 }
 
 #img-box {

@@ -1,10 +1,10 @@
 
 <nav>
   <div id="nav-box">
-    <div class="nav-comp"><p>Home</p></div>
-    <div class="nav-comp"><p>Experience</p></div>
-    <div class="nav-comp"><p>Projects</p></div>
-    <div class="nav-comp"><p>Contact</p></div>
+    <div class="nav-comp" id="nav-home" [ngStyle]="{'background-color':this.navBackgroundHome}"><p>Home</p></div>
+    <div class="nav-comp" id="nav-experience" [ngStyle]="{'background-color':this.navBackgroundExp}"><p>Experience</p></div>
+    <div class="nav-comp" id="nav-projects" [ngStyle]="{'background-color':this.navBackgroundProj}"><p>Projects</p></div>
+    <div class="nav-comp" id="nav-contact" [ngStyle]="{'background-color':this.navBackgroundCont}"><p>Contact</p></div>
   </div>
 </nav>
 
@@ -43,7 +43,13 @@
 
   <div id="developed-box">
     <h1>I<br>have<br>developed</h1>
-    <app-project></app-project>
-    <app-project></app-project>
+    <app-project *ngFor="let p of this.projects" [proj]="p"></app-project>
+  </div>
+
+  <div id="contact-box">
+    <h1>Contact<br>me on</h1>
+    <p>LinkedIn</p>
+    <p>Facebook</p>
+    <p>bjurman.annie@gmail.com</p>
   </div>
 </body>

@@ -1,3 +1,11 @@
+
+/* :root {
+    --h1-color-1: #1e90ff;
+    --h2-color-2: #03498f;
+    --h3-color-3: #82b2e2;
+    --h2-color: #cf3b3b;
+} */
+
 /* CONTAINER BODY */
 #body-box {
     display: flex;
@@ -46,12 +54,16 @@ nav {
     padding: .5em 1em;
     height: 2em;
     transition: 0.3s;
+    border-radius: 2px;
 }
 
 .nav-comp:hover {
-    background-color: #EBEBEB;
-    transition: 0.3s;
+    /* transition: 0.3s; */
     cursor: pointer;
+}
+
+#nav-home {
+    background-color: rgba(0, 255, 255, 0.401);
 }
 
 /* START BOX */
@@ -83,7 +95,7 @@ nav {
 #name-header {
     font-size: 5.5em;
     letter-spacing: 0.13em;
-    background: -webkit-linear-gradient(left,#2E6400, #9FC480, #F5DF37);
+    background: -webkit-linear-gradient(left, #656565, #737373, #c5c5c5);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: .006em rgb(0, 0, 0);
@@ -120,7 +132,7 @@ nav {
 
 /* EXPERIENCE */
 
-#experience-box, #developed-box {
+#experience-box, #developed-box, #contact-box{
     width: 75em;
     /* width: 60%; */
     padding-top: 1em;
@@ -128,7 +140,7 @@ nav {
 }
 
 #experience-title {
-    color: #6D9A48;
+    color: #3d3d3d;
 }
 
 .separator {
@@ -138,33 +150,33 @@ nav {
 }
 
 #separator-2020 {
-    color: #598931;
+    color: #3d3d3d;
 }
 #separator-2020::before,
 #separator-2020::after {
     content: '';
     flex: 1;
-    border-bottom: 1.5px solid #598931;
+    border-bottom: 1.5px solid #3d3d3d;
 }
 
 #separator-2019 {
-    color: #D0D356;
+    color: #3d3d3d;
 }
 #separator-2019::before,
 #separator-2019::after {
     content: '';
     flex: 1;
-    border-bottom: 1.5px solid #D0D356;
+    border-bottom: 1.5px solid #3d3d3d;
 }
 
 #separator-2016 {
-    color: #F0DF62;
+    color: #3d3d3d;
 }
 #separator-2016::before,
 #separator-2016::after {
     content: '';
     flex: 1;
-    border-bottom: 1.5px solid #F0DF62;
+    border-bottom: 1.5px solid #3d3d3d;
 }
   
 .separator:not(:empty)::before {
@@ -176,3 +188,11 @@ nav {
 }
 
 /* DEVELOPED */
+
+
+
+/* CONTACT */
+
+#contact-box {
+    height: 55em;
+}
