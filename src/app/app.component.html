@@ -1,17 +1,17 @@
 
 <nav>
   <div id="nav-box">
-    <div class="nav-comp" id="nav-home" [ngStyle]="{'background-color':this.navBackgroundHome}"><p>Home</p></div>
-    <div class="nav-comp" id="nav-experience" [ngStyle]="{'background-color':this.navBackgroundExp}"><p>Experience</p></div>
-    <div class="nav-comp" id="nav-projects" [ngStyle]="{'background-color':this.navBackgroundProj}"><p>Projects</p></div>
-    <div class="nav-comp" id="nav-contact" [ngStyle]="{'background-color':this.navBackgroundCont}"><p>Contact</p></div>
+    <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)"><p>Home</p></div>
+    <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundExp}" (click)="scroll(exp)"><p>Experience</p></div>
+    <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundProj}" (click)="scroll(proj)"><p>Projects</p></div>
+    <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundCont}" (click)="scroll(cont)"><p>Contact</p></div>
   </div>
 </nav>
 
 <div id="space"></div>
 
 
-<div id="start-box">
+<div id="start-box" #home>
   <div>
     <h1 id="name-header">Annie<br>Bjurman is</h1>
     <p>a Frontend developer, Programmer, UX Designer, Code Writer m.m.</p>
@@ -25,7 +25,7 @@
 </div>
 
 <body id="body-box">
-  <div id="experience-box">
+  <div id="experience-box" #exp>
     <h1 id="experience-title">My<br>experience<br>consists of</h1>
     <div class="separator" id="separator-2020"><p>2020</p></div>
     <div *ngFor="let e of this.experiences">
@@ -41,12 +41,12 @@
     </div>
   </div>
 
-  <div id="developed-box">
+  <div id="developed-box" #proj>
     <h1>I<br>have<br>developed</h1>
     <app-project *ngFor="let p of this.projects" [proj]="p"></app-project>
   </div>
 
-  <div id="contact-box">
+  <div id="contact-box" #cont>
     <h1>Contact<br>me on</h1>
     <p>LinkedIn</p>
     <p>Facebook</p>

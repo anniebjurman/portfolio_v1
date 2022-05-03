@@ -62,10 +62,6 @@ nav {
     cursor: pointer;
 }
 
-#nav-home {
-    background-color: rgba(0, 255, 255, 0.401);
-}
-
 /* START BOX */
 
 #start-box {
@@ -135,7 +131,7 @@ nav {
 #experience-box, #developed-box, #contact-box{
     width: 75em;
     /* width: 60%; */
-    padding-top: 1em;
+    padding-top: 5em;
     margin-bottom: 7em;
 }
 
