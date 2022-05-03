@@ -11,7 +11,7 @@
 
 #img-box {
     width: 25em;
-    background-color: aquamarine;
+    background-color: rgb(220, 220, 220);
     overflow: hidden;
     display: flex;
     justify-content: center;

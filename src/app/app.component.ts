@@ -13,7 +13,7 @@ export class AppComponent{
   projects: Project[] = [];
   currentPart: string = "home";
 
-  navBackgroundHome: string = "pink";
+  navBackgroundHome: string = "#fff2a8";
   navBackgroundExp: string = "transparent";
   navBackgroundProj: string = "transparent";
   navBackgroundCont: string = "transparent";
@@ -76,7 +76,7 @@ export class AppComponent{
   toggleNavBackground() {
     switch(this.currentPart) {
       case "home": {
-        this.navBackgroundHome = "pink";
+        this.navBackgroundHome = "#fff2a8";
         this.navBackgroundCont = "transparent";
         this.navBackgroundExp = "transparent";
         this.navBackgroundProj = "transparent";
@@ -85,7 +85,7 @@ export class AppComponent{
       case "experience": {
         this.navBackgroundHome = "transparent";
         this.navBackgroundCont = "transparent";
-        this.navBackgroundExp = "green";
+        this.navBackgroundExp = "#ffc6a8";
         this.navBackgroundProj = "transparent";
         break;
       }
@@ -93,12 +93,12 @@ export class AppComponent{
         this.navBackgroundHome = "transparent";
         this.navBackgroundCont = "transparent";
         this.navBackgroundExp = "transparent";
-        this.navBackgroundProj = "yellow";
+        this.navBackgroundProj = "#a8e5ff";
         break;
       }
       case "contact": {
         this.navBackgroundHome = "transparent";
-        this.navBackgroundCont = "blue";
+        this.navBackgroundCont = "#e5c1ff";
         this.navBackgroundExp = "transparent";
         this.navBackgroundProj = "transparent";
         break;
