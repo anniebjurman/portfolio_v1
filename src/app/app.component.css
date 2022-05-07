@@ -18,27 +18,23 @@
 
 nav {
     width: 100%;
-    height: 5em;
+    height: 4em;
     display: flex;
     justify-content: center;
-    border: 0.01em solid #E0E0E0;
+    /* border: 0.01em solid #E0E0E0;
     box-shadow: .5em .5em .5em #00000016;
-    background-color: #FFFFFF;
-    /* margin: 0; */
+    background-color: #ffffff00;
+    margin: 0; */
 
     position: fixed;
     top: 0em;
     z-index:10;
 }
 
-#space {
-    height: 2.6em;
-}
-
 #nav-box {
-    background-color: #F7F7F7;
-    border: 0.01em solid #00000002;
-    height: 4.9em;
+    background-color: #ffffff;
+    border: 0.01em solid #0000006d;
+    border-radius: 0.2em;
     width: 32em;
     display: flex;
     justify-content: center;
@@ -65,17 +61,19 @@ nav {
 /* START BOX */
 
 #start-box {
-    height: 50em;
+    height: 55em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0em 10em;
+    background-image: url("../assets/img/header3.svg");
+    background-size: cover;
 
-    background-size: 4em 4em;
+    /* background-size: 4em 4em;
     background-image:
     linear-gradient(to right, #E0E0E0 1px, transparent 1px),
     linear-gradient(to bottom, #E0E0E0 1px, transparent 1px);
-    background-color: white;
+    background-color: white; */
     
     /* background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
 
@@ -84,8 +82,7 @@ nav {
 
 #image {
     height: 30em;
-    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.2));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow( 0px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 /* background: -webkit-linear-gradient(left, #656565, #737373, #c5c5c5); */
@@ -110,7 +107,14 @@ nav {
 } */
 
 
+#text-header {
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
 
+#text-gap {
+    width: 0.4em;
+}
 
 #text-header span {
     font-family: 'Roboto', sans-serif;
@@ -120,10 +124,10 @@ nav {
     line-height: .8em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: .006em rgb(0, 0, 0);
-    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.3));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.3));
+    /* -webkit-filter: drop-shadow(0em 0em 1em #00000016); */
+    filter: drop-shadow( 0em 0.1em 0.05em #00000033);
     margin-bottom: 0.1em;
-   
+
     position: relative;
     display: inline-block;
 
@@ -143,18 +147,30 @@ nav {
     } */
     100% {
         /* bottom: 0px; */
-        background: #fff2a8;
+        /* background: #fff2a8; */
+        background: #88A2AA;
         background-clip: text;
     }
-  }
+}
 
+#text-header-descr {
+    animation: fadeIn 1s forwards 2s;
+    opacity: 0;
+}
 
-
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 /* GAP */
 
 #gap-box {
-    height: 20em;
+    height: 12em;
     
     display: flex;
     flex-direction: column;

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-mail);
+      }
+    </style>
+    <clipPath id="clip-mail">
+      <rect width="172" height="164"/>
+    </clipPath>
+  </defs>
+  <g id="mail" class="cls-1">
+    <g id="Group_9" data-name="Group 9" transform="translate(3.615 21.079)">
+      <path id="Path_3" data-name="Path 3" d="M1843.1,474.771c2.051-4.186,147.118-3.74,148.276,0s-68.363,74.9-75.139,73.828S1841.051,478.957,1843.1,474.771Z" transform="translate(-1833.235 -471.797)"/>
+      <path id="Path_4" data-name="Path 4" d="M1929.6,474.774c2.862.731,4.414,104.481,0,105.469s-53.32-50.512-51.9-52.52S1926.735,474.044,1929.6,474.774Z" transform="translate(-1767.588 -466.162)"/>
+      <path id="Path_5" data-name="Path 5" d="M51.914.008c2.863.73,4.415,104.481,0,105.469S-.848,57.688.011,52.958,49.05-.722,51.914.008Z" transform="translate(54.674 114.095) rotate(180)"/>
+      <path id="Path_6" data-name="Path 6" d="M1842.826,545.538c.348,3.358,144.284,3.178,146.022,0s-45.107-52.526-49.058-51.172-16.255,18.058-21.322,18.052-19.192-19.025-23.146-18.052S1842.477,542.181,1842.826,545.538Z" transform="translate(-1834.933 -426.147)"/>
+    </g>
+  </g>
+</svg>
