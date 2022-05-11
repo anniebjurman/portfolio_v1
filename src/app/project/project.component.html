@@ -4,7 +4,7 @@
     </div>
     <div id="content-box">
         <div id="text-box">
-            <h2>{{this.proj.title}}</h2>
+            <h2><a routerLink="/projectdetail">{{this.proj.title}}</a></h2>
             <p>{{this.proj.content}}</p>
         </div>
         <div id="bottom-box">
@@ -16,3 +16,5 @@
         </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>

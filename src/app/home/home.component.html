@@ -1,0 +1,87 @@
+
+<nav>
+    <div id="nav-box">
+      <!-- <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)"><p>Home</p></div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundExp}" (click)="scroll(exp)"><p>Experience</p></div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundProj}" (click)="scroll(proj)"><p>Projects</p></div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundCont}" (click)="scroll(cont)"><p>Contact</p></div> -->
+  
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)">
+        <img src="../../assets/img/home.svg">
+        <p>Home</p>
+      </div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundExp}" (click)="scroll(exp)">
+        <img src="../../assets/img/experience.svg">
+        <p>Experience</p>
+      </div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundProj}" (click)="scroll(proj)">
+        <img src="../../assets/img/projects.svg">
+        <p>Projects</p>
+      </div>
+      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundCont}" (click)="scroll(cont)">
+        <img src="../../assets/img/contact_nav.svg">
+        <p>Contact</p>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div id="start-box" #home>
+    <div>
+      <!-- <h1 id="name-header">Annie<br>Bjurman is</h1> -->
+      <div id="text-header">
+        <span style="--i:1">A</span>
+        <span style="--i:2">n</span>
+        <span style="--i:3">n</span>
+        <span style="--i:4">i</span>
+        <span style="--i:5">e</span><br>
+        <span style="--i:6">B</span>
+        <span style="--i:7">j</span>
+        <span style="--i:8">u</span>
+        <span style="--i:9">r</span>
+        <span style="--i:10">m</span>
+        <span style="--i:11">a</span>
+        <span style="--i:12">n</span>
+        <span id="text-gap"></span>
+        <span style="--i:13">i</span>
+        <span style="--i:14">s</span>
+      </div>
+      <p id="text-header-descr">a Frontend developer, Programmer, UX Designer, Code Writer m.m.</p>
+    </div>
+    <img id="image" src = "../../assets/img/image.svg" alt="siluet of Annie Bjurman"/>
+  </div>
+  
+  <div id="gap-box">
+    <p>Scroll down</p>
+    <img id="arrow" src="../../assets/img/down-arrow.png">
+  </div>
+  
+  <body id="body-box">
+    <div id="experience-box" #exp>
+      <h1 id="experience-title">My<br>experience<br>consists of</h1>
+      <div class="separator" id="separator-2020"><p>2020</p></div>
+      <div *ngFor="let e of this.experiences">
+        <app-experience *ngIf="e.year == 2020" [exp]="e"></app-experience>
+      </div>
+      <div class="separator" id="separator-2019"><p>2019</p></div>
+      <div *ngFor="let e of this.experiences">
+        <app-experience *ngIf="e.year == 2019" [exp]="e"></app-experience>
+      </div>
+      <div class="separator" id="separator-2016"><p>2016</p></div>
+      <div *ngFor="let e of this.experiences">
+        <app-experience *ngIf="e.year == 2016" [exp]="e"></app-experience>
+      </div>
+    </div>
+  
+    <div id="developed-box" #proj>
+      <h1>I<br>have<br>developed</h1>
+      <app-project *ngFor="let p of this.projects" [proj]="p"></app-project>
+    </div>
+  
+    <div id="contact-box" #cont>
+      <h1>Contact<br>me on</h1>
+      <p>LinkedIn</p>
+      <p>Facebook</p>
+      <p>bjurman.annie@gmail.com</p>
+    </div>
+  </body>
