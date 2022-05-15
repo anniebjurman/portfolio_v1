@@ -14,11 +14,13 @@ export class HomeComponent implements OnInit {
   experiences: Experience[] = [];
   projects: Project[] = [];
   currentPart: string = "home";
+  accentColor: string = "#FF00A9";
+  transpColor: string = "transparent";
 
-  navBackgroundHome: string = "#fff2a8";
-  navBackgroundExp: string = "transparent";
-  navBackgroundProj: string = "transparent";
-  navBackgroundCont: string = "transparent";
+  navBackgroundHome: string = this.accentColor;
+  navBackgroundExp: string = this.transpColor;
+  navBackgroundProj: string = this.transpColor;
+  navBackgroundCont: string = this.transpColor;
   
   constructor(private dataService: DataService, private viewPostScroller: ViewportScroller) {
   }
@@ -67,31 +69,31 @@ export class HomeComponent implements OnInit {
   toggleNavBackground() {
     switch(this.currentPart) {
       case "home": {
-        this.navBackgroundHome = "#fff2a8";
-        this.navBackgroundCont = "transparent";
-        this.navBackgroundExp = "transparent";
-        this.navBackgroundProj = "transparent";
+        this.navBackgroundHome = this.accentColor;
+        this.navBackgroundCont = this.transpColor;
+        this.navBackgroundExp = this.transpColor
+        this.navBackgroundProj = this.transpColor;
         break;
       }
       case "experience": {
-        this.navBackgroundHome = "transparent";
-        this.navBackgroundCont = "transparent";
-        this.navBackgroundExp = "#ffc6a8";
-        this.navBackgroundProj = "transparent";
+        this.navBackgroundHome = this.transpColor;
+        this.navBackgroundCont = this.transpColor;
+        this.navBackgroundExp = this.accentColor;
+        this.navBackgroundProj = this.transpColor;
         break;
       }
       case "project": {
-        this.navBackgroundHome = "transparent";
-        this.navBackgroundCont = "transparent";
-        this.navBackgroundExp = "transparent";
-        this.navBackgroundProj = "#a8e5ff";
+        this.navBackgroundHome = this.transpColor;
+        this.navBackgroundCont = this.transpColor;
+        this.navBackgroundExp = this.transpColor;
+        this.navBackgroundProj = this.accentColor;
         break;
       }
       case "contact": {
-        this.navBackgroundHome = "transparent";
-        this.navBackgroundCont = "#e5c1ff";
-        this.navBackgroundExp = "transparent";
-        this.navBackgroundProj = "transparent";
+        this.navBackgroundHome = this.transpColor;
+        this.navBackgroundCont = this.accentColor;
+        this.navBackgroundExp = this.transpColor;
+        this.navBackgroundProj = this.transpColor;
         break;
       }
     }

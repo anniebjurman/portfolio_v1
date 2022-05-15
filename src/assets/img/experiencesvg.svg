@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
   <defs>
-    <clipPath id="clip-experience">
+    <clipPath id="clip-experiencesvg">
       <rect width="172" height="164"/>
     </clipPath>
   </defs>
-  <g id="experience" clip-path="url(#clip-experience)">
-    <path id="Union_10" data-name="Union 10" d="M168,145.99H0V74.37L11.938,90.333,83.75,111.321,154.9,90.333c.069-.083,7.624-9.081,13.1-15.832V145.99h0ZM16.555,81.109,0,52.854V26.641H52.826V0h62.351V26.641H168V53.023L152.628,81.109,83.75,99.694Zm91.694-54.468V6.94H59.754v19.7Z" transform="translate(2 7)" fill="none" stroke="#000" stroke-width="2"/>
+  <g id="experiencesvg" clip-path="url(#clip-experiencesvg)">
+    <path id="Union_10" data-name="Union 10" d="M168,145.99H0V73.37L11.938,89.333,83.75,110.321,154.9,89.333c.068-.082,7.586-9.035,13.1-15.832V145.99h0ZM16.208,74.751,0,55.617V36.785H52.826V9h62.351V36.785H168V54.567l-15.72,20.184L83.4,93.336Zm86.04-37.967V19.94H65.753V36.785Z" transform="translate(2 4.505)" fill="none" stroke="#000" stroke-width="2"/>
   </g>
 </svg>

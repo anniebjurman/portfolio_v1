@@ -1,20 +1,63 @@
 
 <nav>
     <div id="nav-box">
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)">
-        <img src="../../assets/img/home.svg">
+      <div class="nav-comp" (click)="scroll(home)">
+        <!-- SVG HOME -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+          <defs>
+            <clipPath id="clip-home">
+              <rect width="172" height="164"/>
+            </clipPath>
+          </defs>
+          <g id="home" clip-path="url(#clip-home)">
+            <path [ngStyle]="{'fill':this.navBackgroundHome}" id="Path_125" data-name="Path 125" d="M-14641.094,369.979l79.345-79.986,81.645,79.986-18.622,14.227-3.137,63.959h-43.717l-1.688-46.583h-26.8l-2.271,46.583H-14621l-2.981-63.959Z" transform="translate(14647.138 -288.383)" fill="none" stroke="#000" stroke-width="2"/>
+          </g>
+        </svg>
         <p>Home</p>
       </div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundExp}" (click)="scroll(exp)">
-        <img src="../../assets/img/experience.svg">
+      <div class="nav-comp" (click)="scroll(exp)">
+        <!-- SVG EXPERIENCE -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+          <defs>
+            <clipPath id="clip-experiencesvg">
+              <rect width="172" height="164"/>
+            </clipPath>
+          </defs>
+          <g id="experiencesvg" clip-path="url(#clip-experiencesvg)">
+            <path [ngStyle]="{'fill':this.navBackgroundExp}" id="Union_10" data-name="Union 10" d="M168,145.99H0V73.37L11.938,89.333,83.75,110.321,154.9,89.333c.068-.082,7.586-9.035,13.1-15.832V145.99h0ZM16.208,74.751,0,55.617V36.785H52.826V9h62.351V36.785H168V54.567l-15.72,20.184L83.4,93.336Zm86.04-37.967V19.94H65.753V36.785Z" transform="translate(2 4.505)" fill="none" stroke="#000" stroke-width="2"/>
+          </g>
+        </svg>
         <p>Experience</p>
       </div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundProj}" (click)="scroll(proj)">
-        <img src="../../assets/img/projects.svg">
+      <div class="nav-comp" (click)="scroll(proj)">
+        <!-- SVG PROJECTS -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+          <defs>
+            <clipPath id="clip-projectssvg">
+              <rect width="172" height="164"/>
+            </clipPath>
+          </defs>
+          <g id="projectssvg" clip-path="url(#clip-projectssvg)">
+            <g id="Group_57" data-name="Group 57" transform="translate(-6.084 9.77)">
+              <path [ngStyle]="{'fill':this.navBackgroundProj}" id="Subtraction_9" data-name="Subtraction 9" d="M146.247,134.246H12V0h89.582C79.108,22.557,60.09,41.783,59.9,41.974l-4.315,53.5h55.068c.124-.119,15.69-14.995,35.593-34.206v72.973Z" transform="translate(0 14.125)" fill="none" stroke="#000" stroke-width="2"/>
+              <path [ngStyle]="{'fill':this.navBackgroundProj}" id="Path_127" data-name="Path 127" d="M-14462.549,439.034l-2.553,32.148h32.557l71.092-71.4-4.6-26.639-26.405-4.7Z" transform="translate(14533.622 -372.35)" fill="none" stroke="#000" stroke-width="2"/>
+            </g>
+          </g>
+        </svg>
         <p>Projects</p>
       </div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundCont}" (click)="scroll(cont)">
-        <img src="../../assets/img/contact_nav.svg">
+      <div class="nav-comp" (click)="scroll(cont)">
+        <!-- SVG CONTACT -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+          <defs>
+            <clipPath id="clip-contactsvg">
+              <rect width="172" height="164"/>
+            </clipPath>
+          </defs>
+          <g id="contactsvg" clip-path="url(#clip-contactsvg)">
+            <path [ngStyle]="{'fill':this.navBackgroundCont}" id="Path_124" data-name="Path 124" d="M2124.1,520.387l24.264-29.746-27.537-34.862-44.959,48.979L2187.516,616.4l50.135-47.315-35.037-25.957-38.1,16.9Z" transform="translate(-2070.758 -454.091)" fill="none" stroke="#000" stroke-width="2"/>
+          </g>
+        </svg>
         <p>Contact</p>
       </div>
     </div>
@@ -45,8 +88,23 @@
   </div>
   
   <div id="gap-box" (click)="this.scroll(exp)">
-    <p>Scroll down</p>
-    <img id="arrow" src="../../assets/img/down-arrow.png">
+    <div id="arrow-area">
+      <p>Scroll down</p>
+      <!-- SVG ARROW -->
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+        <defs>
+          <clipPath id="clip-arrowsvg">
+            <rect width="172" height="164"/>
+          </clipPath>
+        </defs>
+        <g id="arrowsvg" clip-path="url(#clip-arrowsvg)">
+          <g id="Union_11" data-name="Union 11" transform="translate(-15714.145 1633.856)" fill="none">
+            <path class="arrow" d="M15800.146-1496.716l0,0-14.145-14.14,0,0-70-70,14.144-14.14,70,70,70-70,14.145,14.14-70,70,0,0-14.14,14.14Z" stroke="none"/>
+            <path class="arrow" d="M 15800.14453125 -1499.542236328125 L 15800.146484375 -1499.544311523438 L 15800.1484375 -1499.54248046875 L 15811.5068359375 -1510.901123046875 L 15811.5048828125 -1510.903198242188 L 15812.8720703125 -1512.27001953125 L 15881.4609375 -1580.859252929688 L 15870.1455078125 -1592.171142578125 L 15800.14453125 -1522.169311523438 L 15798.73046875 -1523.58349609375 L 15730.142578125 -1592.171142578125 L 15718.828125 -1580.859375 L 15788.8798828125 -1510.809936523438 L 15788.8759765625 -1510.806518554688 L 15800.14453125 -1499.542236328125 M 15800.1484375 -1496.713989257812 L 15800.146484375 -1496.715942382812 L 15800.14453125 -1496.713989257812 L 15786 -1510.853759765625 L 15786.00390625 -1510.857421875 L 15715.9990234375 -1580.859497070312 L 15730.142578125 -1594.999389648438 L 15800.14453125 -1524.997680664062 L 15870.1455078125 -1594.999389648438 L 15884.2900390625 -1580.859497070312 L 15814.2861328125 -1510.855834960938 L 15814.2880859375 -1510.853759765625 L 15800.1484375 -1496.713989257812 Z" stroke="none" fill="#000"/>
+          </g>
+        </g>
+      </svg>
+    </div>
   </div>
   
   <body id="body-box">
