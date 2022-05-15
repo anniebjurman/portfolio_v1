@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { DataService } from '../data.service';
 import { Project } from '../project';
 
 @Component({
@@ -9,9 +10,13 @@ import { Project } from '../project';
 export class ProjectComponent implements OnInit {
   @Input() proj!: Project;
 
-  constructor() { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
+  }
+
+  setCurrentPos() {
+    this.dataService.setPrevScrollPos(document.documentElement.scrollTop);
   }
 
 }

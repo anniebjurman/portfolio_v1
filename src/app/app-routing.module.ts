@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ProjectdetailComponent } from './projectdetail/projectdetail.component';
 
 const routes: Routes = [
-  { path: 'projectdetail', component: ProjectdetailComponent },
+  { path: 'projectdetail/:id', component: ProjectdetailComponent },
   { path: 'home', component: HomeComponent},
   
   // otherwise redirect to home

@@ -1,11 +1,6 @@
 
 <nav>
     <div id="nav-box">
-      <!-- <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)"><p>Home</p></div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundExp}" (click)="scroll(exp)"><p>Experience</p></div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundProj}" (click)="scroll(proj)"><p>Projects</p></div>
-      <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundCont}" (click)="scroll(cont)"><p>Contact</p></div> -->
-  
       <div class="nav-comp" [ngStyle]="{'background-color':this.navBackgroundHome}" (click)="scroll(home)">
         <img src="../../assets/img/home.svg">
         <p>Home</p>
@@ -23,12 +18,10 @@
         <p>Contact</p>
       </div>
     </div>
-  </nav>
-  
+</nav>
   
   <div id="start-box" #home>
     <div>
-      <!-- <h1 id="name-header">Annie<br>Bjurman is</h1> -->
       <div id="text-header">
         <span style="--i:1">A</span>
         <span style="--i:2">n</span>
@@ -51,7 +44,7 @@
     <img id="image" src = "../../assets/img/image.svg" alt="siluet of Annie Bjurman"/>
   </div>
   
-  <div id="gap-box">
+  <div id="gap-box" (click)="this.scroll(exp)">
     <p>Scroll down</p>
     <img id="arrow" src="../../assets/img/down-arrow.png">
   </div>
