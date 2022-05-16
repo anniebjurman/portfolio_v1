@@ -10,12 +10,12 @@ import { Project } from './project';
 export class DataService {
   projects: Project[] = [];
   experiences: Experience[] = [];
-  prevScrollPos: number;
+  // prevScrollPos: number;
 
   constructor() { 
     this.loadExperiences();
     this.loadProjects();
-    this.prevScrollPos = -1;
+    // this.prevScrollPos = -1;
   }
 
   loadExperiences() {
@@ -56,11 +56,11 @@ export class DataService {
     return of(project);
   }
 
-  setPrevScrollPos(pos: number) {
-    this.prevScrollPos = pos;
-  }
+  // setPrevScrollPos(pos: number) {
+  //   this.prevScrollPos = pos;
+  // }
 
-  getPrevScrollPos() {
-    return this.prevScrollPos;
-  }
+  // getPrevScrollPos() {
+  //   return this.prevScrollPos;
+  // }
 }

@@ -16,11 +16,17 @@ export class HomeComponent implements OnInit {
   currentPart: string = "home";
   accentColor: string = "#FF00A9";
   transpColor: string = "transparent";
+  defColor: string = "black";
 
   navBackgroundHome: string = this.accentColor;
   navBackgroundExp: string = this.transpColor;
   navBackgroundProj: string = this.transpColor;
   navBackgroundCont: string = this.transpColor;
+
+  navTextHome: string = this.accentColor;
+  navTextExp: string = "black";
+  navTextProj: string = "black";
+  navTextCont: string = "black";
   
   constructor(private dataService: DataService, private viewPostScroller: ViewportScroller) {
   }
@@ -73,6 +79,11 @@ export class HomeComponent implements OnInit {
         this.navBackgroundCont = this.transpColor;
         this.navBackgroundExp = this.transpColor
         this.navBackgroundProj = this.transpColor;
+
+        this.navTextHome = this.accentColor;
+        this.navTextCont = this.defColor;
+        this.navTextExp = this.defColor;
+        this.navTextProj = this.defColor;
         break;
       }
       case "experience": {
@@ -80,6 +91,11 @@ export class HomeComponent implements OnInit {
         this.navBackgroundCont = this.transpColor;
         this.navBackgroundExp = this.accentColor;
         this.navBackgroundProj = this.transpColor;
+
+        this.navTextHome = this.defColor;
+        this.navTextCont = this.defColor;
+        this.navTextExp = this.accentColor;
+        this.navTextProj = this.defColor;
         break;
       }
       case "project": {
@@ -87,6 +103,11 @@ export class HomeComponent implements OnInit {
         this.navBackgroundCont = this.transpColor;
         this.navBackgroundExp = this.transpColor;
         this.navBackgroundProj = this.accentColor;
+
+        this.navTextHome = this.defColor;
+        this.navTextCont = this.defColor;
+        this.navTextExp = this.defColor;
+        this.navTextProj = this.accentColor;
         break;
       }
       case "contact": {
@@ -94,6 +115,11 @@ export class HomeComponent implements OnInit {
         this.navBackgroundCont = this.accentColor;
         this.navBackgroundExp = this.transpColor;
         this.navBackgroundProj = this.transpColor;
+
+        this.navTextHome = this.defColor;
+        this.navTextCont = this.accentColor;
+        this.navTextExp = this.defColor;
+        this.navTextProj = this.defColor;
         break;
       }
     }

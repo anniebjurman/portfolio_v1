@@ -58,6 +58,6 @@ a {
 }
 
 a:hover {
-    color: rgb(203, 130, 12);
+    color: #FF00A9;
     transition: 0.2s;
 }

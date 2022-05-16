@@ -1,3 +1,9 @@
+h1 {
+    color: #FF00A9;
+    -webkit-text-stroke: .006em rgb(0, 0, 0);
+    filter: drop-shadow( 0em 0.1em 0.05em #00000033);
+}
+
 #container {
     display: flex;
     flex-direction: row;
@@ -9,9 +15,10 @@
 }
 
 #title-box {
-    background-image: url("../../assets/img/header3.svg");
-    background-size: cover;
+    /* background-image: url("../../assets/img/projDetailBackground.svg");
+    background-size:contain; */
     padding: 3em 3em;
+    padding-bottom: 9em;
 }
 
 #content-box {
@@ -24,7 +31,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 1em 0em;
+    margin: 0em 0em;
 }
 
 .image-box {

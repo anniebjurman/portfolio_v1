@@ -80,6 +80,18 @@ nav {
     cursor: pointer;
 }
 
+#nav-comp-home:hover #Path_125{
+    fill: #ff00aa72;
+}
+
+#nav-comp-exp:hover p {
+    color: #ff00a9;
+}
+
+.nav-comp svg {
+    height: auto;
+}
+
 /* START BOX */
 
 #start-box {
@@ -88,8 +100,11 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 0em 10em;
-    background-image: url("../../assets/img/header3.svg");
-    background-size: cover;
+    /* background-image: url("../../assets/img/header3.svg");
+    background-size: cover; */
+
+    /* background-image: radial-gradient(circle at 1px 1px, rgb(78, 78, 78) 1px, transparent 0);
+    background-size: 70px 70px; */
 }
 
 #image {
@@ -158,6 +173,32 @@ nav {
     }
 }
 
+#linkicons {
+    animation: fadeIn 1s forwards 2s;
+    opacity: 0;
+}
+
+#linkicons svg {
+    width: 2em;
+    height: auto;
+    margin-right: 1em;
+}
+
+#linkedina:hover #Exclusion_1 {
+    fill: #FF00A9;
+    transition: 0.2s;
+}
+
+#githuba:hover #Subtraction_6 {
+    fill: #FF00A9;
+    transition: 0.2s;
+}
+
+#Exclusion_1, #Subtraction_6 {
+    fill: black;
+    transition: 0.2s;
+}
+
 /* GAP */
 
 #gap-box {
@@ -172,19 +213,18 @@ nav {
     flex-direction: column;
     align-items: center;
     transition: 0.2s;
-    color: #FF00A9;
 }
 
 #arrow-area:hover {
     cursor: pointer;
-    /* color: #FF00A9;
-    transition: 0.2s; */
+    color: #FF00A9;
+    transition: 0.2s;
 }
 
-/* #arrow-area:hover .arrow {
+#arrow-area:hover .arrow {
     fill: #FF00A9;
     transition: 0.2s;
-} */
+}
 
 #arrow-area svg {
     width: 2.5em;
@@ -192,17 +232,14 @@ nav {
 }
 
 .arrow {
-    fill: #FF00A9;
-    -webkit-animation: mover 1.5s infinite  alternate;
+    fill: black;
+    transition: 0.2s;
     animation: mover 1.5s infinite  alternate;
 }
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-30px); }
-}
+
 @keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-30px); }
+    100% { transform: translateY(-40px); }
 }
 
 /* EXPERIENCE */
@@ -213,41 +250,15 @@ nav {
     margin-bottom: 7em;
 }
 
-#experience-title {
-    color: #3d3d3d;
-}
-
 .separator {
     display: flex;
     align-items: center;
     text-align: center;
+    /* color: #FF00A9; */
 }
 
-#separator-2020 {
-    color: #3d3d3d;
-}
-#separator-2020::before,
-#separator-2020::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1.5px solid #3d3d3d;
-}
-
-#separator-2019 {
-    color: #3d3d3d;
-}
-#separator-2019::before,
-#separator-2019::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1.5px solid #3d3d3d;
-}
-
-#separator-2016 {
-    color: #3d3d3d;
-}
-#separator-2016::before,
-#separator-2016::after {
+.separator::before,
+.separator::after {
     content: '';
     flex: 1;
     border-bottom: 1.5px solid #3d3d3d;

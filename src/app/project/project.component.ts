@@ -15,8 +15,8 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  setCurrentPos() {
-    this.dataService.setPrevScrollPos(document.documentElement.scrollTop);
-  }
+  // setCurrentPos() {
+  //   this.dataService.setPrevScrollPos(document.documentElement.scrollTop);
+  // }
 
 }
