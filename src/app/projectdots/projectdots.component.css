@@ -1,0 +1,26 @@
+
+#dot-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 0em 10em;
+}
+
+#dot {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #FF00A9;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: 0em 0em 1em #00000016;
+}
+
+#dot-marked {
+    height: 25px;
+    width: 25px;
+    background-color: #FF00A9;
+    border: 2px solid #FF00A9;
+    border-radius: 50%;
+    font-size: 25px;
+    box-shadow: 0em 0em 1em #00000016;
+}

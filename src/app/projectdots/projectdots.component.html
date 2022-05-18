@@ -1,0 +1,6 @@
+<div id="dot-box">
+    <div  *ngFor="let i of this.counter(this.numProjects)">
+        <div id="dot-marked" *ngIf="i == this.currProj"></div>
+        <div id="dot" *ngIf="i != this.currProj"></div>
+    </div>
+</div>

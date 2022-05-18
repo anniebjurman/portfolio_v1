@@ -27,6 +27,8 @@ export class HomeComponent implements OnInit {
   navTextExp: string = "black";
   navTextProj: string = "black";
   navTextCont: string = "black";
+
+  currProj!: Project;
   
   constructor(private dataService: DataService, private viewPostScroller: ViewportScroller) {
   }
@@ -34,21 +36,12 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.experiences = this.dataService.getExperiences();
     this.projects = this.dataService.getProjects();
-
-    // if (this.dataService.getPrevScrollPos() === -1) {
-    //   this.viewPostScroller.scrollToPosition([0,0]);
-    //   console.log("-1");
-    // } else {
-    //   var tmp = this.dataService.getPrevScrollPos();
-    //   this.viewPostScroller.scrollToAnchor("proj");
-    //   console.log("NOT -1:", tmp);
-    // }
+    this.currProj = this.projects[0];
   }
 
   @HostListener('window:scroll', )
     onWindowScroll() {
       this.getCurrentPart();
-      console.log("Current ypos:", document.documentElement.scrollTop);
   }
 
   getCurrentPart() {
@@ -127,6 +120,28 @@ export class HomeComponent implements OnInit {
 
   scroll(el: HTMLElement) {
     el.scrollIntoView({behavior: "smooth"});
+  }
+
+  getNextProj() {
+    var currId = this.currProj.id;
+    var nextId = currId + 1;
+
+    for (var p of this.projects) {
+      if (p.id == nextId) {
+        this.currProj = p;
+      }
+    }
+  }
+
+  getPrevProj() {
+    var currId = this.currProj.id;
+    var nextId = currId - 1;
+
+    for (var p of this.projects) {
+      if (p.id == nextId) {
+        this.currProj = p;
+      }
+    }
   }
 
 }

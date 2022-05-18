@@ -1,0 +1,31 @@
+<!-- <div id="proj-box" [ngClass]="projOpacity"> -->
+<div id="proj-box">
+    <div id="img-box">
+        <img src="../../assets/img/project/{{this.proj.images[0]}}">
+    </div>
+    <div id="content-box">
+        <div id="left-box">
+            <h2>{{this.proj.title}}</h2>
+            <p>{{this.proj.content}}</p>
+        </div>
+        <div id="line"></div>
+        <div id="right-box">
+            <div>
+                <table>
+                    <tr>
+                        <th>When:</th>
+                        <td><p>{{this.proj.date}}</p></td>
+                    </tr>
+                    <tr>
+                        <th>Build with:</th>
+                        <td><p>{{this.proj.builtWith}}</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="github-box">
+                <img id="github-img" src="../../assets/img/github-logo.png">
+                <p>Check it out on GitHub!</p>
+            </div>
+        </div>
+    </div>
+</div>

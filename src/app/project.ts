@@ -1,13 +1,15 @@
 export class Project {
-    id: Number;
+    id: number;
     title: string;
     content: string;
     link: string;
     images: string[] = [];
     builtWith: string;
+    date: string;
 
-    constructor(id: Number, title: string, content: string, link: string, image1: string, image2: string, image3: string, builtWith: string) {
+    constructor(id: number, date: string, title: string, content: string, link: string, image1: string, image2: string, image3: string, builtWith: string) {
         this.id = id;
+        this.date = date;
         this.title = title;
         this.content = content;
         this.link = link;
