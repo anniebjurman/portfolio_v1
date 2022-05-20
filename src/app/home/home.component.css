@@ -294,5 +294,23 @@ nav {
     justify-content: center;
 }
 
+#dots svg {
+    height: 1.5em;
+}
+
+#dots svg:hover .arr-l {
+    fill: #FF00A9;
+    transition: 0.2s;
+}
+
+#dots svg:hover .arr-r {
+    fill: #FF00A9;
+    transition: 0.2s;
+}
+
+.arr-l, .arr-r {
+    fill: black;
+    transition: 0.2s;
+}
 
 /* CONTACT */

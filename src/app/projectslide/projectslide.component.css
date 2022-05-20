@@ -6,10 +6,22 @@
 }
 
 #img-box {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     height: 75%;
+}
+
+#img-box-top, #img-box-bottom {
+    background-color: darksalmon;
+    flex: 1;
+    display: flex;
+    gap: 0.5em;
+}
+
+#img1, #img2 {
+    background-color: bisque;
+    flex: 1;
 }
 
 #content-box {
@@ -56,8 +68,16 @@ th {
     flex-direction: row;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
 }
 
 #github-box img {
     height: 2em;
+}
+
+#github-box:hover {
+    color: #FF00A9;
+    transition: 0.2s;
 }
