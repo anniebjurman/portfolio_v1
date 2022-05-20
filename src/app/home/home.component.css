@@ -13,12 +13,12 @@ nav {
     display: flex;
     justify-content: left;
     position: fixed;
-    top: 35vh;
+    top: 30vh;
     z-index:10;
 }
 
 #nav-box svg {
-    width: 2.5em;
+    width: 1.5em;
 }
 
 /* #Path_125, #Union_10, #Subtraction_9, #Path_127, #Path_124{
@@ -28,18 +28,18 @@ nav {
     background-color: #ffffff;
     border: 0.01em solid #0000006d;
     /* border-radius: 0.2em; */
-    width: 5em;
+    width: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1.5em;
-    height: 22em;
+    gap: 1em;
+    height: 15em;
     transition: 0.3s;
 }
 
 #nav-box:hover {
-    width: 15em;
+    width: 10em;
     transition: 0.3s;
 }
 
@@ -61,7 +61,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5em 1.5em;
+    padding: 0em 0.7em;
     height: 2em;
     transition: 0.3s;
     border-radius: 2px;
@@ -88,7 +88,7 @@ nav {
 
 #start-box {
     /* background-color: aqua; */
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,12 +99,13 @@ nav {
     /* background-color: darkkhaki; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5em;
     align-items: center;
 }
 
 #image {
-    height:30em;
+    height: 17em;
     filter: drop-shadow( 0px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -121,7 +122,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.13em;
-    font-size: 5.5em;
+    font-size: 3.5em;
     line-height: .8em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: .006em rgb(0, 0, 0);
@@ -175,9 +176,9 @@ nav {
 }
 
 #linkicons svg {
-    width: 2em;
+    width: 1.3em;
     height: auto;
-    margin-right: 1em;
+    margin-right: 0.7em;
 }
 
 #linkedina:hover #Exclusion_1 {
@@ -248,8 +249,8 @@ nav {
 }
 
 .center-box {
-    width: 80vw;
-    max-width: 80em;
+    width: 60vw;
+    max-width: 60em;
 }
 
 /* EXPERIENCE */
@@ -273,7 +274,7 @@ nav {
 .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 1.5px solid #3d3d3d;
+    border-bottom: 1px solid #3d3d3d;
 }
   
 .separator:not(:empty)::before {

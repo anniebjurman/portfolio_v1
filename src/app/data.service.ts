@@ -35,13 +35,13 @@ export class DataService {
   }
 
   loadProjects(){
-    var p1 = new Project(1, "November 2021","NASA Space App Challenge", "A website the informs about the suns impact on us on earth and the different satellites that orbit the sun.",
-     "https://github.com/anniebjurman/AFI_webShopTutorial", "VB1.png", "hej", "hej", "Figma, HTML/CSS/JS");
-    var p2 = new Project(2, "November 2031", "Website for VB-ost", "A clickable HiFi prototype of a website for Västerbottensost. Developed in collaboration with Västerbottensost during a course at Umeå University.",
-    "link", "VB1.png", "hej", "hej", "Adobe XD");
-    var p3 = new Project(3, "November 2021", "Mobile-adapted design for INSIKT", "A clickable HiFi prototype on a mobile-adapted version of Trimma’s product INSIKT. Developed in collaboration with Trimma during a course at Umeå University.",
-    "link", "VB1.png", "hej", "hej", "Adobe XD");
-    var p4 = new Project(4, "November 2021", "Hackaton", "a HiFi clickable prototype ...", "link", "VB1.png", "hej", "hej", "Adobe XD");
+    var p1 = new Project(1, "web", "November 2021","NASA Space App Challenge", "A website the informs about the suns impact on us on earth and the different satellites that orbit the sun.",
+     "https://github.com/anniebjurman/AFI_webShopTutorial", "nasa1.png", "hej", "hej", "Figma, HTML/CSS/JS");
+    var p2 = new Project(2, "mobile", "November 2031", "Website for VB-ost", "A clickable HiFi prototype of a website for Västerbottensost. Developed in collaboration with Västerbottensost during a course at Umeå University.",
+    "link", "vb1.png", "vb2.png", "hej", "Adobe XD");
+    var p3 = new Project(3, "mobile", "November 2021", "Mobile-adapted design for INSIKT", "A clickable HiFi prototype on a mobile-adapted version of Trimma’s product INSIKT. Developed in collaboration with Trimma during a course at Umeå University.",
+    "link", "insikt_circle.png", "insikt_share.png", "hej", "Adobe XD");
+    var p4 = new Project(4, "mobile", "November 2021", "Hackaton", "a HiFi clickable prototype ...", "link", "hackaton1.png", "hackaton2.png", "hej", "Adobe XD");
 
     this.projects.push(p1, p2, p3, p4);
   }

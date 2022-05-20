@@ -155,8 +155,9 @@
     
       <div id="developed-box" #proj>
         <h1>I<br>have<br>developed</h1>
+        <app-project2 *ngFor="let p of this.projects" [proj]="p"></app-project2>
         <!-- <app-project *ngFor="let p of this.projects" [proj]="p"></app-project> -->
-        <app-projectslide [proj]="this.currProj"></app-projectslide>
+        <!-- <app-projectslide [proj]="this.currProj"></app-projectslide>
         <div id="dots">
           <div (click)="this.getPrevProj()">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="171" viewBox="0 0 172 171">
@@ -201,7 +202,7 @@
               </g>
             </svg>
           </div>
-        </div>
+        </div> -->
       </div>
     
       <div id="contact-box" #cont>

@@ -1,0 +1,20 @@
+<div id="project-box">
+    <div class="img-box" id="img-box-mobile" *ngIf="this.proj.format == 'mobile'">
+        <img src="../../assets/img/project/{{this.proj.images[0]}}">
+        <img src="../../assets/img/project/{{this.proj.images[1]}}">
+    </div>
+
+    <div class="img-box" id="img-box-web" *ngIf="this.proj.format == 'web'">
+        <img src="../../assets/img/project/{{this.proj.images[0]}}">
+    </div>
+
+    <div id="content-box">
+        <div id="text-box">
+            <p id="date">{{this.proj.date}}</p>
+            <h2><a routerLink="/projectdetail/{{this.proj.id}}">{{this.proj.title}}</a></h2>
+            <p>{{this.proj.content}}</p>
+        </div>
+        <p>Build with: {{this.proj.builtWith}}</p>
+    </div>
+</div>
+<hr>

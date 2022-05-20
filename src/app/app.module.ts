@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { DataService } from './data.service';
 import { ProjectslideComponent } from './projectslide/projectslide.component';
 import { ProjectdotsComponent } from './projectdots/projectdots.component';
+import { Project2Component } from './project2/project2.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProjectdotsComponent } from './projectdots/projectdots.component';
     HomeComponent,
     ProjectslideComponent,
     ProjectdotsComponent,
+    Project2Component,
   ],
   imports: [
     BrowserModule,
