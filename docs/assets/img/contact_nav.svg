@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-contact_nav);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-contact_nav">
+      <rect width="172" height="164"/>
+    </clipPath>
+  </defs>
+  <g id="contact_nav" class="cls-1">
+    <path id="Path_124" data-name="Path 124" class="cls-2" d="M2131.815,528.566c.77-8.329,19.239-12.715,17.667-24.641s-14.4-39.924-30.931-39.159-32.815,22.793-33.328,39.159,89.229,129.909,122.137,123,40.626-30.83,39.355-39.065-17.34-34.3-39.355-29.156-19.428,20.606-25.261,18.249S2131.047,536.9,2131.815,528.566Z" transform="translate(-2080.033 -463.989)"/>
+  </g>
+</svg>

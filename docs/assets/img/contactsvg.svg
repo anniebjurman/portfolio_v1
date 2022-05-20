@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+  <defs>
+    <clipPath id="clip-contactsvg">
+      <rect width="172" height="164"/>
+    </clipPath>
+  </defs>
+  <g id="contactsvg" clip-path="url(#clip-contactsvg)">
+    <path id="Path_124" data-name="Path 124" d="M2124.1,520.387l24.264-29.746-27.537-34.862-44.959,48.979L2187.516,616.4l50.135-47.315-35.037-25.957-38.1,16.9Z" transform="translate(-2070.758 -454.091)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="164" viewBox="0 0 172 164">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-projects);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-projects">
+      <rect width="172" height="164"/>
+    </clipPath>
+  </defs>
+  <g id="projects" class="cls-1">
+    <g id="Group_57" data-name="Group 57" transform="translate(2.2 1.09)">
+      <path id="Subtraction_9" data-name="Subtraction 9" class="cls-2" d="M131.247,146.245H15a15,15,0,0,1-15-15V15A15,15,0,0,1,15,0h97.045C88.548,23.475,64.3,47.988,63.007,49.365c-.966,1.031-2.388,7.447-3.536,15.964-1.243,9.214-1.737,17.619-1.322,22.485.219,2.567.684,4.136,1.381,4.663.818.621,3.036,1.095,6.591,1.407,3.079.271,7.165.414,11.818.414,11.748,0,24.367-.885,25.965-1.821,1.282-.75,20.673-19.22,42.342-40.333v79.1a15,15,0,0,1-15,15Z" transform="translate(0 14.125)"/>
+      <path id="Path_127" data-name="Path 127" class="cls-2" d="M-14462.789,432.372c-1.641,1.785-5,27.038-2.312,29.115s27.586,1.136,29.484,0c1.914-1.136,62.656-60.859,64.383-64.663,1.711-3.8,8.156-14.187-4.164-24.125s-20.75-6.219-23.914-4.259S-14461.141,430.586-14462.789,432.372Z" transform="translate(14535.622 -364.655)"/>
+    </g>
+  </g>
+</svg>
