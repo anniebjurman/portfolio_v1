@@ -42,24 +42,25 @@ export class HomeComponent implements OnInit {
   @HostListener('window:scroll', )
     onWindowScroll() {
       this.getCurrentPart();
+      console.log("ypos:", document.documentElement.scrollTop);
   }
 
   getCurrentPart() {
     var yPos = document.documentElement.scrollTop;
 
-      if (yPos > 3800 && this.currentPart != "contact") {
+      if (yPos > 4200 && this.currentPart != "contact") {
         this.currentPart = "contact";
         this.toggleNavBackground();
       } 
-      else if(yPos > 2400 && yPos < 2900 && this.currentPart != "project") {
+      else if(yPos > 1800 && yPos < 4200 && this.currentPart != "project") {
         this.currentPart = "project";
         this.toggleNavBackground();
       } 
-      else if (yPos > 950 && yPos < 2400 && this.currentPart != "experience") {
+      else if (yPos > 800 && yPos < 1800 && this.currentPart != "experience") {
         this.currentPart = "experience";
         this.toggleNavBackground();
       }
-      else if (yPos > 0 && yPos < 950 && this.currentPart != "home") {
+      else if (yPos > 0 && yPos < 800 && this.currentPart != "home") {
         this.currentPart = "home";
         this.toggleNavBackground();
       }

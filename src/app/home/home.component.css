@@ -315,3 +315,15 @@ nav {
 }
 
 /* CONTACT */
+
+#contact-box a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+#contact-box a:hover {
+    color: #FF00A9;
+    transition: 0.3s;
+    cursor: pointer;
+}
