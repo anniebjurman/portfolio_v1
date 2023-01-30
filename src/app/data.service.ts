@@ -39,7 +39,7 @@ export class DataService {
     //  "https://github.com/anniebjurman/AFI_webShopTutorial", "nasa1.png", "hej", "hej", "Figma, HTML/CSS/JS");
     var p1 = new Project(1, "mobile", "May 2020", "Project: The Green Sandwich", "A clickable HiFi prototype ...", "link", "mackan1.png", "mackan2.png", "hej", "Adobe XD");
     var p2 = new Project(2, "mobile", "November 2031", "A new website for Västerbottensost", "A clickable HiFi prototype of a website for Västerbottensost. Developed in collaboration with Västerbottensost during a course at Umeå University.",
-    "link", "vb1.png", "vb2.png", "hej", "Adobe XD");
+    "link", "vb3.png", "vb2.png", "hej", "Adobe XD");
     var p3 = new Project(3, "mobile", "November 2021", "Mobile-adapted design for INSIKT", "A clickable HiFi prototype of a mobile-adapted version of Trimma’s product INSIKT. Developed in collaboration with Trimma during a course at Umeå University.",
     "link", "insikt_circle.png", "insikt_share.png", "hej", "Adobe XD");
     var p4 = new Project(4, "mobile", "November 2021", "Hackaton", "a clickable HiFi prototype ...", "link", "hackaton1.png", "hackaton2.png", "hej", "Adobe XD");
